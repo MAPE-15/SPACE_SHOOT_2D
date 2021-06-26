@@ -51,7 +51,7 @@ class ShootGame:
 
         # first is 0 score
         self.score_text = self.image.create_text(int(self.image['width']) / 6, int(self.image['height']) / 15,
-                                                 text='SCORE: ' + str(self.score), font='Arial 30', fill='white')
+                                                 text='SCORE: ' + str(self.score), font='Purisa 30', fill='white')
         
 
         # call methods and also bind some keyboard chars
@@ -99,7 +99,7 @@ class ShootGame:
                                       x_heart + 30, y_heart - 40,
                                       x_heart + 30, y_heart - 30,
                                       
-                                      fill = 'red', outline='#fc8403', width=2, tag='heart' + str(i))
+                                      fill='red', outline='#fc8403', width=2, tag='heart' + str(i))
 
             x_heart -= 70
 
@@ -107,7 +107,7 @@ class ShootGame:
         # if 0 hp, stop game and type game over
         if self.hp <= 0:
             self.not_lost = False
-            self.image.create_text(int(self.image['width']) / 2, int(self.image['height']) / 2, text='GAME OVER !!!', font='Arial 60', fill='#cf1f1f')
+            self.image.create_text(int(self.image['width']) / 2, int(self.image['height']) / 2, text='GAME OVER !!!', font='Purisa 60', fill='#cf1f1f')
 
 
     # create a plane
@@ -290,7 +290,7 @@ class ShootGame:
         # type score, num of points
         self.image.delete(self.score_text)
         self.score_text = self.image.create_text(int(self.image['width']) / 6, int(self.image['height']) / 15,
-                                                 text='SCORE: ' + str(self.score), font='Arial 30', fill='white')
+                                                 text='SCORE: ' + str(self.score), font='Purisa 30', fill='white')
 
 
     # remove all unnecessary bullets and targets
